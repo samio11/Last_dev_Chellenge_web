@@ -8,22 +8,77 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
+    <style>
+        .main_font{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
+    <header class="main_font">
+        <!-- Nav Bar Start -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li>Home</li>
+                        <li>Services</li>
+                        <li>Our Works</li>
+                        <li>Clients</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl hidden lg:flex">Edie</a>
+            </div>
 
+            <div class="navbar-end hidden md:flex">
+                <a href="#" class="mx-4">Home</a>
+                <a href="#" class="mx-4">Service</a>
+                <a href="#" class="mx-4">Our Work</a>
+                <a href="#" class="mx-4">Clients</a>
+                <a href="#" class="mx-4">Contact</a>
+            </div>
+            <a href="#" class="btn flex ml-auto font-bold lg:hidden">Edie</a>
+        </div>
+        <!-- Done -->
+        <section class="max-w-screen-xl mx-auto mt-16 pl-2 md:pl-14 space-y-5">
+            <p class="text-xs text-[#2D9CDB]">Unhappy with your website?</p>
+            <h3 class="text-3xl font-bold">We create beautiful <br> and fast web services</h3>
+        </section>
+        <section class="container mt-16">
+        <img src="./images/heroImage.jpg" alt="" class="mx-auto h-[170px] lg:h-auto">
+        </section>
+        <section class="max-w-screen-xl mx-auto mt-16 pl-2 md:pl-14 space-y-5">
+            <h3 class="text-3xl font-bold">Story, emotion <br> and purpose</h3>
+            <p class="text-base">We help transform your ideas into real <br> world applications that will outperform <br> your toughest competition and help you <br> achieve your strategic goals in short <br> period of time.</p>
+            <form action="">
+                <label for="">Want us to contact you?</label> <br>
+                <input type="email" name="" id="" class="border-2 h-[40px] bg-[#F2F2F2]"> <button class="btn btn-primary">Join</button>
+            </form>
+        </section>
     </header>
     <main>
 
